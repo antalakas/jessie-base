@@ -7,6 +7,6 @@ RUN cd dotfiles
 RUN ./setup.sh
 RUN git clone https://github.com/tomasr/molokai
 RUN ln -sf `pwd`/molokai/colors ~/.vim/colors
-RUN https://github.com/powerline/fonts
+RUN git clone https://github.com/powerline/fonts
 RUN cd fonts
 RUN ./install.sh
